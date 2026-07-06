@@ -1,0 +1,12 @@
+# Data pipeline (the dashboard is a separate Next.js app in dashboard/)
+pandas>=2.1
+numpy>=1.26
+google-cloud-bigquery>=3.25
+google-cloud-storage>=2.16
+db-dtypes>=1.2
+pyarrow>=15.0
+google-genai>=1.0
+google-adk>=1.0
+
+# GPU benchmark (requires NVIDIA GPU + CUDA 12.x driver; Linux/WSL2 only):
+#   pip install cudf-cu12 --extra-index-url=https://pypi.nvidia.com

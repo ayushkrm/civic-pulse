@@ -1,0 +1,9 @@
+{
+  "cpu_seconds": 1.4497,
+  "gpu_seconds": null,
+  "speedup": null,
+  "rows_processed": 9275,
+  "duplicates_removed": 725,
+  "repeats": 5,
+  "gpu_available": false
+}

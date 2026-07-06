@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: civic-pulse
+    runtime: node
+    rootDir: dashboard
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: GOOGLE_CLOUD_PROJECT
+        sync: false # set in Render dashboard
+      - key: GCP_SA_KEY_BASE64
+        sync: false # base64 of the service-account JSON key
+      - key: NEXT_PUBLIC_MAPBOX_TOKEN
+        sync: false # optional; map falls back to a ranked list without it

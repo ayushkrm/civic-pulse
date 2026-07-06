@@ -1,0 +1,12 @@
+# Secrets — never commit
+.env
+dashboard/.env.local
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Generated artifacts (complaints.csv is regenerable; speedup.json IS committed
+# so the deployed dashboard can show the benchmark metric)
+complaints.csv

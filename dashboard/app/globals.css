@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-page text-ink antialiased;
+}
+
+::selection {
+  background: rgba(57, 135, 229, 0.35);
+}
+
+/* recessive scrollbars for the dark theme */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #223047 transparent;
+}
+
+.mapboxgl-popup-content {
+  @apply !bg-surface-2 !text-ink !rounded-lg !shadow-card !border !border-edge !px-3 !py-2;
+}
+.mapboxgl-popup-tip {
+  border-top-color: #16213a !important;
+}
+.mapboxgl-popup-close-button {
+  @apply !text-ink-2;
+}
