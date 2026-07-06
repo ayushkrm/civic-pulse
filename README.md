@@ -67,6 +67,8 @@ cp .env.local.example .env.local   # GOOGLE_CLOUD_PROJECT (+ optional Mapbox tok
 npm run dev                        # http://localhost:3000
 ```
 
+The dashboard is the only UI in this repo; the older Streamlit app has been removed. For Vercel deployments, the app root is the dashboard folder.
+
 Locally the BigQuery client uses your `gcloud` Application Default Credentials — no service-account key needed.
 
 ## Deploy to Render
